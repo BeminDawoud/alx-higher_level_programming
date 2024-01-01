@@ -1,1 +1,1 @@
-This is a repository to the first tasks in python
+This is a repository to the all the projects and tasks in python.
