@@ -10,7 +10,7 @@ number = (abs(number) % 10) * fix
 print("{:s}".format(" is " + str(number) + " and is "), end='')
 if number > 5:
     print("greater than 5")
-elif number is 0:
+elif number == 0:
     print("0")
 else:
     print("less than 6 and not 0")
