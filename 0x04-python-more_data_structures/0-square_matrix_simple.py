@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     new = list(map(list, matrix))
     for i in range(len(new)):
