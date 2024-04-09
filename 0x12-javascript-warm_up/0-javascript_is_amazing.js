@@ -1,4 +1,4 @@
 #!/usr/bin/node
-/* Java Scribt Warm Up */ 
+/* Warm Up */
 let myVar =  'JavaScript is amazing';
 console.log(myVar);
