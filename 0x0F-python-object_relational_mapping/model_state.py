@@ -8,9 +8,13 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
+
 class State(Base):
+
     """Class of State"""
+
     __tablename__ = 'states'
+
     id = Column(
             Integer,
             autoincrement=True,
@@ -21,4 +25,3 @@ class State(Base):
             String(128),
             nullable=False
             )
-
