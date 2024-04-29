@@ -2,15 +2,12 @@
 '''
 script that fetches https://alx-intranet.hbtn.io/status
 '''
+
+
 import urllib.request
 
 
 if __name__ == "__main__":
-    '''
-    Main Script
-    '''
-
-
     url = 'https://alx-intranet.hbtn.io/status'
     resp = urllib.request.urlopen(url)
     html = resp.read()
