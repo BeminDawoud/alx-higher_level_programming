@@ -9,7 +9,7 @@ from urllib import request
 
 if __name__ == "__main__":
     url = 'https://alx-intranet.hbtn.io/status'
-    resp = urllib.request.urlopen(url)
+    resp = request.urlopen(url)
     html = resp.read()
     resp.close()
     print('Body response:')
