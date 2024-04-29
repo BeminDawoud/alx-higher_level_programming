@@ -8,7 +8,7 @@ from urllib import request
 
 
 if __name__ == '__main__':
-    with request.urlopen("https://intranet.hbtn.io/status") as rps:
+    with request.urlopen("https://alx-intranet.hbtn.io/status") as rps:
         r = rps.read()
         print("Body response:")
         print("\t- type: {}".format(type(r)))
