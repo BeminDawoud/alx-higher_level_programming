@@ -2,7 +2,7 @@
 """
 takes in a URL
 sends a request to the URL
-displays the value of the X-Request-Id variable 
+displays the value of the X-Request-Id variable
 """
 
 
