@@ -4,7 +4,7 @@ script that fetches https://alx-intranet.hbtn.io/status
 '''
 
 
-import urllib.request
+from urllib import request
 
 
 if __name__ == "__main__":
