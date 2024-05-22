@@ -1,18 +1,21 @@
 #!/usr/bin/node
-/* display the status code of a GET request. */
+// prints the number of movies
+// where the character “Wedge Antilles” is present.
 const request = require('request');
-let count = 0;
-const actor = 'https://swapi-api.alx-tools.com/api/people/18/';
-request(process.argv[2], (error, response, body) => {
-  if (error) {
-    console.error(error);
+request(process.argv[2], (e, r, d) => {
+  if (e) {
+    console.log(e);
   } else {
-    const films = JSON.parse(body).results;
-    for (const film of films) {
-      if (film.characters.includes(actor)) {
-        count++;
+    let c = 0;
+    const films = JSON.parse(d).results;
+    for (let i = 0; i < films.length; ++i) {
+      for (let j = 0; j < films[i].characters.length; ++j) {
+        if (films[i].characters[j].includes('/18/')) {
+          c++;
+          break;
+        }
       }
     }
-    console.log(count);
+    console.log(c);
   }
 });
