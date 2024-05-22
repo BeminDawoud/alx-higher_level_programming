@@ -3,7 +3,7 @@
 const request = require('request');
 let count = 0;
 const actor = 'https://swapi-api.alx-tools.com/api/people/18/';
-request('https://swapi-api.alx-tools.com/api/films/', (error, response, body) => {
+request(process.argv[2], (error, response, body) => {
   if (error) {
     console.error(error);
   } else {
